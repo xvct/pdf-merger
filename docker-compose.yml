@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+
+  python-pdf-merger:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: python-pdf-merger
+    volumes:
+      - .:/usr/src/app
